@@ -1,25 +1,16 @@
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#org6c3fb63">1. Installation</a></li>
-<li><a href="#org783188d">2. Usage</a></li>
-</ul>
-</div>
-</div>
-
-
-<a id="org6c3fb63"></a>
-
 # Installation
-```sh
+```shell
     $ npm install huffman-encode
+    // or
+    $ yarn add huffman-encode
 ```
 
-<a id="org783188d"></a>
+
+
+<a id="orgfff3194"></a>
 
 # Usage
-```js
+```javascript
     const huffmanEncode = require('huffman-encode')
     
     const probabilities = {
@@ -33,11 +24,11 @@
     
     huffmanEncode(probabilities)
     // => {
-    //   "a": "1000",
-    //   "b": "1001",
-    //   "c": "101",
+    //   "a": "1110",
+    //   "b": "1111",
+    //   "c": "110",
     //   "d": "00",
     //   "e": "01",
-    //   "f": "11"
+    //   "f": "10",
     // }
 ```
